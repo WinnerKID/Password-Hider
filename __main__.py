@@ -14,7 +14,7 @@ def enter_pass():
         if user_pass == check_pass:
             print('Both passwords match!')
             with open('storage.txt', 'a') as f: # the a stands for append in other words the existing contents of the file won't be overwritten
-                print('# ' + user_title, file=f) # the hashtag is an indication that what comes after it is a title
+                print('# ' + user_title, file=f) # the hashtag is an indication that what comes after it's a title
                 print(user_pass, file=f)
             break
         elif user_pass != check_pass:
